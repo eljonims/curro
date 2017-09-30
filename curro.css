@@ -1,0 +1,111 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	background: blue;
+}
+
+@media (orientation: portrait){
+	
+	#aplicacion{
+		width: 98vw;
+		height:98vh;
+		background: green;
+		margin: auto;
+		margin-top: 1vh;
+	
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items:center;
+	}
+		
+		#zona-periodos{
+			width:98%;
+			background: purple;
+			display:flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;	
+			
+
+		
+		}
+		#zona-calendario{
+			background: yellow;
+			display:flex;
+			flex-direction:column;
+			justify-content: space-between;
+			align-items: center;	
+			width:98%;		
+		}
+			.cabecera-mes{
+				width:100%;
+				display:flex;
+				justify-content:center;
+				align-items: center;
+			}
+			.dias-mes{
+				width:100%;
+				display:flex;
+				justify-content: space-around;
+				flex-wrap: wrap;
+			}
+				.dia{
+				width:13vmin;
+				height: 13vmin;
+				display:flex;
+				justify-content:center;
+				align-items: center;
+				border: 1px solid black;
+			}
+			#inicio-fin{
+				display:flex;
+				flex-direction:row;
+				width:100%;
+				justify-content: space-between;
+			}
+				#inicio-fin button{
+					width:10vmin;
+				}
+		#zona-menu-resumen{
+			width: 98%;
+			background: black;
+			display:flex;
+			flex-direction: column;
+			justify-content: start;
+			align-items: center;
+		}
+			#resumen{
+				width:98%;
+				background: red;
+				display: flex;
+		
+			}
+			#menu{
+				width:98%;
+				background: gray;
+				display:flex;
+				flex-direction: row;
+				justify-content: space-between;
+				align-items: start;
+			}
+}
+@media (orientation: landscape){
+	#aplicacion{
+		flex-direction: row;
+		justify-content: space-around;
+		align-items:center;
+	}
+	
+}
+
+
+
+
+
+
+
+
+
